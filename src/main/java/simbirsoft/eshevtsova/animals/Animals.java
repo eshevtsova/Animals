@@ -1,16 +1,11 @@
 package simbirsoft.eshevtsova.animals;
 
-public class Animals {
+public abstract class Animals {
     private static String ourClass = "Я отношусь к классу Животные";
-    private String name;
-    private String breed;
-    public String sayBreed(){
-        System.out.println(breed);
-        return breed;
-    }
-    public void sayName(){
-        System.out.print ("Меня зовут " + name + ". Порода ");
-    }
+    protected static String name;
+    protected static String breed;
+    public abstract String sayBreed();
+    public abstract void sayName();
     static void sayClass(){
         System.out.println(ourClass);
     }

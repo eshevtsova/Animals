@@ -4,6 +4,17 @@ import java.util.Scanner;
 
 public class Mammals extends Animals {
 
+    @Override
+    public void sayName(){
+        System.out.print ("Меня зовут " + name + ". Порода ");
+    }
+
+    @Override
+    public String sayBreed(){
+        System.out.println(breed);
+        return breed;
+    }
+
     public void sayAge() {
 
         int age;

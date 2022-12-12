@@ -5,6 +5,17 @@ import java.util.Scanner;
 
 public class Birds extends Animals {
 
+    @Override
+    public void sayName(){
+        System.out.print ("Меня зовут " + name + ". Порода ");
+    }
+
+    @Override
+    public String sayBreed(){
+        System.out.println(breed);
+        return breed;
+    }
+
     public void eatGrain() {
 
         int[] days = new int[7];
