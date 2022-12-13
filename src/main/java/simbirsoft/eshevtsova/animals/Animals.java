@@ -1,13 +1,13 @@
 package simbirsoft.eshevtsova.animals;
-
 public abstract class Animals {
-    private static String ourClass = "Я отношусь к классу Животные";
-    protected static String name;
-    protected static String breed;
-    public abstract String sayBreed();
+    private static final String OUR_CLASS = "Я отношусь к классу Животные";
+    protected String name;
+    protected String breed;
+    public abstract void sayBreed();
     public abstract void sayName();
+    public abstract void character();
     static void sayClass(){
-        System.out.println(ourClass);
+        System.out.println(OUR_CLASS);
     }
     public void setName(String name) {
         this.name = name;
@@ -16,3 +16,4 @@ public abstract class Animals {
         this.breed = breed;
     }
 }
+

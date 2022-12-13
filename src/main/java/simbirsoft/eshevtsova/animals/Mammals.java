@@ -1,20 +1,20 @@
 package simbirsoft.eshevtsova.animals;
 
 import java.util.Scanner;
-
 public class Mammals extends Animals {
-
+    private static final String VOICE = "У меня есть шерсть! \n";
     @Override
     public void sayName(){
         System.out.print ("Меня зовут " + name + ". Порода ");
     }
-
     @Override
-    public String sayBreed(){
-        System.out.println(breed);
-        return breed;
+    public void character() {
+        System.out.println(VOICE);
     }
-
+    @Override
+    public void sayBreed(){
+        System.out.println(breed);
+    }
     public void sayAge() {
 
         int age;
